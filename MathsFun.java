@@ -56,7 +56,7 @@ class MathsFun{
 		d = 0;
 		System.out.println("atan of " +d +" is " +Math.atan(d)); //returns double.. atan of the argument
 
-		d = 5.3584631;
-		System.out.println("rint of " +d +" is " +Math.rint(d)); //returns double..closest integer to argument
+		double x = 12.345678;
+System.out.printf("Number is approximately %.2f", x);
 	}
 }
