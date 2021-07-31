@@ -1,35 +1,35 @@
 import java.util.Scanner;
-class demo{
+class student{
 	String name;
-	int age;
+	int marks;
 	
 	//default 
-	//demo(){
+	//student(){
 	//}
 		
 	//no arguments 
-	demo(){
+	student(){
 		System.out.println("-> no args constructor called");	
 	}
 	
 	//parameterized constructor	
-	demo(String n,int a){
+	student(String n,int a){
 		name = n;
-		age = a;
+		marks = a;
 	}
 	
 	//copy constructor
-	demo(demo object){
+	student(student object){
 		name = object.name;
-		age = object.age;
+		marks = object.marks;
 	}
 }
 class Constructor{
 	public static void main(String args[]){
-		demo obj = new demo();
-		demo obj1 = new demo("Japan",5);
-		demo obj2 = obj1; // copy Constructor
-		demo obj3 = new demo(obj1); // copy Constructor
+		student obj = new student();
+		student obj1 = new student("Japan",5);
+		student obj2 = obj1; // copy Constructor
+		student obj3 = new student(obj1); // copy Constructor
 		System.out.println("-> parameterized constructor : ");
 		System.out.println("the name of obj1 is : "+obj1.name);
 		System.out.println("-> copy constructor : ");

@@ -5,7 +5,7 @@ final class Person{
 }  
     
 class Man extends Person{  
-  void name(){
+  void names(){
 	System.out.println("Shah Japan");
   }   
 }

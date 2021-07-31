@@ -5,10 +5,10 @@ class stat{
      static void change(){  
 		b = a*5;
     }  
-	 	 
-     void display(){
-		 System.out.println("b is " +b);
-		 } 
+	 
+    void display(){
+		System.out.println("b is " +b);
+	} 
 }  
 public class StaticMethod{  
     public static void main(String args[]){
