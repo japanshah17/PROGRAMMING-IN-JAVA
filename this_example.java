@@ -1,8 +1,7 @@
 class this_keyword{
 	int i;
-	int j;
-	int ar;
-	
+	private int j;
+
 	/*
 	this_keyword(int x,int y){
 		i=x;
@@ -63,5 +62,3 @@ class this_example{
 		obj2.print();
 	}	
 }
-
-
