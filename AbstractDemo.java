@@ -7,24 +7,26 @@ abstract class Parent{
 		System.out.println("show() method of parent");
 	}
 }
-class Child extends Parent{
+abstract class Child extends Parent{
 	void call()
 	{
 		System.out.println("abstarct call() method of child");
 	}
-	void callme()
+
+}
+class subChild extends Child{
+		void callme()
 	{
-		System.out.println("abstarct callme() method of child");
+		System.out.println("abstarct callme() method of subchild");
 	}
 }
-
 
 
 class AbstractDemo
 {
 	public static void main(String[] a)
 	{
-		Child obj=new Child();
+		subChild obj=new subChild();
 		obj.call();
 		obj.callme();
 		
