@@ -1,23 +1,23 @@
 interface mother{
-	abstract void eyes();
-}
-interface father{
-	abstract void nose();
-}
-class Child implements mother,father{
-	public void eyes(){
+	default void eyes(){
 		System.out.println("EYES---MOTHER");
 	}
-    public void nose(){
+
+}
+interface father{
+		static void nose(){
 		System.out.println("NOSE---FATHER");
 	}
 }
-class interfaceDemo
+class Child implements mother,father{
+
+}
+class interDemo
 {
 	public static void main(String a[])
 	{
 		Child tobj=new Child();
 		tobj.eyes();
-		tobj.nose();
+		father.nose();
 	}
 }

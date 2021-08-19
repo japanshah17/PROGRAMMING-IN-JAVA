@@ -10,7 +10,7 @@ class Man extends Person{
   }   
 }
 
-class FinalMethod{
+class FinalClass{
     public static void main(String args[]){  
 		Person obj= new Person();  
 		obj.name();  
