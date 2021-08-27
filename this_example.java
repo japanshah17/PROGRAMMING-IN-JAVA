@@ -21,13 +21,13 @@ class this_keyword{
 		this.show();//invoke current class method
 	}
 	
-		this_keyword(int i,int j){
+	this_keyword(int i,int j){
 		this.i=i;  //refer current class instance
 		this.j=j; //refer current class instance
 	}
 	
 	void print(){
-	System.out.println("same arguments name with this keyword i: "+i+" j:"+j);
+	System.out.println(" i: "+i+" j:"+j);
 	}
 	
 	this_keyword returns(this_keyword o1){
@@ -45,8 +45,6 @@ class this_keyword{
 	}
 	void makeCopy(this_keyword o1){
 		new this_keyword(this); //passed as argument in the constructor call.
-		this.i = o1.i;
-		this.j = o1.j;
 	}
 
 }

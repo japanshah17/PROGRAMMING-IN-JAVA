@@ -2,7 +2,9 @@ abstract class Parent{
 	
 	abstract void call();
 	abstract void callme();
-	
+	Parent(){
+		System.out.println("Constructor of Abstract class");
+	}
 	void show(){
 		System.out.println("show() method of parent");
 	}
